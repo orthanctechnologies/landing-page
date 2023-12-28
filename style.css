@@ -64,7 +64,8 @@ body {
     margin-left: 60px;
     margin-right: 60px;
     justify-content: center;
-align-items: center;
+    align-items: center;
+    flex-shrink:2;
 }
 
 .text-area .txt{
