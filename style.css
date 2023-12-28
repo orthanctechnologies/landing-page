@@ -215,11 +215,11 @@ body {
     right:0;
     bottom: 0;
   
-  background: #e65f12; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #c39dee 0%, #9954ec 99%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #a29ca9 0%,#95909bd0 99%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #313131 0%,#1f1d1d 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: #e65f12; 
+  background: -moz-linear-gradient(-45deg, #c39dee 0%, #9954ec 99%); 
+  background: -webkit-linear-gradient(-45deg, #a29ca9 0%,#95909bd0 99%); 
+  background: linear-gradient(135deg, #313131 0%,#1f1d1d 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); 
     content: '';
     opacity: 0;
       -webkit-transition: opacity 0.9s ease 0s; 
@@ -462,12 +462,12 @@ a:hover::before {
     text-align: justify;
 }
 
-/* Apply styles for the text inside the flip card */
+
 .flip-card p {
     margin: 0;
 }
 
-/* Apply a rotation of 180 degrees to the flip card when hovered */
+
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
@@ -478,7 +478,7 @@ a:hover::before {
     }
 
     .intro-title {
-        margin-top: 10px; /* Adjust as needed */
+        margin-top: 10px; 
         text-align: center;
         font-size: 40px;
     }
@@ -491,8 +491,9 @@ a:hover::before {
         align-items: center;
     }
     .text-area .txt{
-        font-size: 18px;
+        font-size: 15px;
         justify-content: center;
         align-items: center;
+        width: 200px;
     }
 }
