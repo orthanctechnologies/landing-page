@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins';
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/mountain.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    height: 400px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.intro-title {
+    font-size: 6em;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(160, 161, 160) 2px 2px 2px;
+    text-align: center;
+    height: 130px;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: center;
+align-items: center;
+}
+
+.text-area .txt{
+    color: rgb(110, 109, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid rgba(214, 214, 214, 0.938); 
+    text-align: center;
+    width: 600px;border-radius: 30px;
+    background-color: rgba(243, 247, 250, 0.664);
+    
+}
+
+.txt p{
+  margin: 0;
+}
+
+.text-area .buton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.btn {
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    width: 100px;
+    height: 50px;
+    background: rgba(243, 242, 242, 0.8);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    border:hidden;
+    font-family: 'Nunito', sans-serif;
+}
+
+.btn:hover{
+    background: rgb(22, 21, 19);
+    color: white;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+.infos img{
+    border-radius: 50%;
+}
+.info-title {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 3;
+    align-items: center;
+    margin: 70px 0 100px;
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+}
+
+.infos {
+    display: flex;
+    gap: 60px;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+    font-family: 'Nunito', sans-serif;
+}
+.avis-container{
+
+  display: flex;
+  margin: 100px;
+  margin-top: 200px;
+}
+.avis{
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    quotes: "«" "»" "‹" "›";
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.avis .author{
+    margin: auto;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+}
+
+.review {
+    quotes: '"' '"' "'" "'";
+  }
+  .review::before {
+    content: open-quote;
+  }
+  .review::after {
+    content: close-quote;
+  } 
+
+.centerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    cursor: pointer;
+    background-image: url(images/mer2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+    
+  }
+.centerBox h1{
+  color: white;
+  transition: color 0.3s;
+}
+
+  .centerBox:hover{cursor:pointer;}
+  
+  .categoryWrapper{
+    height: 310px;
+    width: 500px;
+    background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 60px;
+    
+  }
+  
+  .categoryWrapper:after{
+    position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a29ca9+0,95909b+99 */
+  background: #e65f12; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #c39dee 0%, #9954ec 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #a29ca9 0%,#95909bd0 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #313131 0%,#1f1d1d 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    content: '';
+    opacity: 0;
+      -webkit-transition: opacity 0.9s ease 0s; 
+  }
+  
+  .categoryWrapper:hover:after{
+    opacity: 0.4;
+  }
+  
+  .categoryWrapper h1{
+    color:rgb(248, 238, 238);
+    font-size: 40px;
+    text-align: center;
+    -webkit-transition: all 0.15s ease 0s; 
+    position: relative;
+    z-index: 10;
+    margin-bottom: 10px;
+  }
+  
+  .categoryWrapper:hover h1{
+    transform: translateY(-10px);
+    color: white;
+  }
+  
+  .categoryWrapper button{
+    position: absolute;
+    transform: translatey(60px);
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color:white;
+    width: 250px;
+    height:50px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    z-index: 10;
+  }
+  
+  .categoryWrapper button span{
+    display: block;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .categoryWrapper button > span:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+  
+  .categoryWrapper:hover button > span:after{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  
+  .categoryWrapper button > span:before{
+    content:'';
+    position: absolute;
+    top:0;
+    right: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+  
+  .categoryWrapper:hover button > span:before{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  
+  .categoryWrapper button > span > span:before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    right: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  
+  .categoryWrapper:hover button > span > span:before{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  
+  .categoryWrapper button > span > span:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  
+  .categoryWrapper:hover button > span > span:after{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  
+  .categoryWrapper button > span > span > span{
+    transition: color 0.15s ease-out 0.3s;
+    color: transparent;
+  }
+  
+  .categoryWrapper:hover button > span > span > span{
+    color:white;
+  }
+  
+  .categoryWrapper button > span > span > span:after{
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    color:#1f2e4d;
+    content: attr(data-attr-span);
+    width: 0%;
+    height: 100%;
+    background:white;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: width 0.2s;
+  }
+  
+  .categoryWrapper button:hover > span > span > span:after{
+    width: 100%;
+  }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 500;
+    background-color: rgba(133, 133, 133, 0.192);
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    font-weight: 550;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    position: relative;
+}
+
+a:hover {
+    color: rgb(5, 8, 10);
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(65, 49, 49);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Apply styles for the flip card */
+.flip-card {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    perspective: 1000px; /* Add perspective to create 3D effect */
+}
+
+/* Style the inner container for the flip card */
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Style the front side of the flip card */
+.flip-card-front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+/* Style the back side of the flip card */
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+/* Apply styles for the text inside the flip card */
+.flip-card p {
+    margin: 0;
+}
+
+/* Apply a rotation of 180 degrees to the flip card when hovered */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+@media screen and (max-width: 760px) {
+    .intro-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-title {
+        margin-top: 10px; /* Adjust as needed */
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .text-area{
+        color: white;
+        font-size: 15px;
+        margin: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-area .txt{
+        font-size: 18px;
+        justify-content: center;
+        align-items: center;
+    }
+}
